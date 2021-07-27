@@ -8,7 +8,6 @@ void part21();
 void part22();
 
 int main() {
-    part22();
 }
 
 // 'Welcome' message printing
