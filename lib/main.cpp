@@ -20,6 +20,7 @@ void part1() {
 
 // Sum of two numbers.
 void part2() {
+    // Defining and assigning variables('number1', 'number2', 'sum') with zero as initial value.
     int number1 = 0;
     int number2 = 0;
     int sum = 0;
