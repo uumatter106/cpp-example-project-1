@@ -6,6 +6,7 @@
 void part1();
 void part21();
 void part22();
+void part3();
 
 int main() {
 }
@@ -58,3 +59,37 @@ void part22() {
     // Sum them all and say the result on the same line.
     std::cout << "Sum is " << number1 + number2 << std::endl;
 }
+
+// Comparing two numbers via `if` statement.
+void part3() {
+    using std::cout, std::cin, std::endl;
+
+    // Define and assign two numbers.
+    int number1 = 0;
+    int number2 = 0;
+
+    // Take that numbers from user via streams.
+    cout << "Enter two integers to compare: ";
+    cin >> number1 >> number2;
+
+    // Compare the two numbers and show what comparison styles which they are proper.
+
+    if (number1 == number2)
+        cout << number1 << " == " << number2 << endl;
+
+    if (number1 != number2)
+        cout << number1 << " != " << number2 << endl;
+
+    if (number1 > number2)
+        cout << number1 << " > " << number2 << endl;
+
+    if (number1 < number2)
+        cout << number1 << " < " << number2 << endl;
+
+    if (number1 >= number2)
+        cout << number1 << " >= " << number2 << endl;
+
+    if (number1 <= number2)
+        cout << number1 << " <= " << number2 << endl;
+
+    //! The above code is very dirty with cause of repetition.
