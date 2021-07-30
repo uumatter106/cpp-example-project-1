@@ -93,3 +93,4 @@ void part3() {
         cout << number1 << " <= " << number2 << endl;
 
     //! The above code is very dirty with cause of repetition.
+}
