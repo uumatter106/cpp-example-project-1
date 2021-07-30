@@ -8,13 +8,13 @@
 # `$name` is application name of main file.
 #   Default is `"app"`.
 
-param ($run = $true, $name = "app")
+param ($run = $true, $oname = "app", $fname = "main")
 
 # Compiling file with GNU C++ Compiler.
-Invoke-Expression "g++ .\lib\main.cpp -o .\bin\$($name)"
+Invoke-Expression "g++ .\lib\$($fname).cpp -o .\bin\$($oname)"
 
 if ($run -eq $true) {
     # Running the compiled file.
-    Invoke-Expression ".\bin\$($name).exe"
+    Invoke-Expression ".\bin\$($oname).exe"
 }
 
